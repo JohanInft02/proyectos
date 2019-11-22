@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="//cdn.plugdo.com/js/2.5/plugdo-dependency.min.js"></script>
+    <script src="//cdn.plugdo.com/js/2.5/plugdoeui.min.js"></script>
+    <script src="js/indone.js"></script>
+
+</head>
+
+<body>
+    <plugdo-navbar src="/menu"></plugdo-navbar>
+    <plugdo-form  id="form" src="/formulario"> </plugdo-form>
+    <plugdo-desplegar src="/usu"></plugdo-desplegar>
+
+<div class="container p-1">
+    <div class="row" id="data">
+    
+    </div>
+</div>
+
+    <script>
+        let {view} = plugdo;
+        $(document).ready(function () {
+            // view.setData("pludgo-desplegar","datos",GetValores());
+            view.load();
+
+        });
+    </script>
+</body>
+
+</html>

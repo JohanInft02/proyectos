@@ -1,0 +1,49 @@
+<plugdo-navbar >
+
+    <data>
+{
+    "titulo":"Probando Boostrap & Node.js",
+    "NavColorRGB":"#7c0000",
+    "items":
+    [
+         {
+          "text": "inicio",
+          "link": "#"
+         },
+         {
+          "text": "preguntas",
+          "link": "#"
+         },
+         {
+          "text": "ayuda",
+          "link": "#"
+         }
+    ]
+}
+    
+</data>
+
+    <template>
+        <nav class="navbar navbar-expand-lg  navbar-dark" style="background-color:#7c0000;">
+
+            <a href="#" class="navbar-brand">[json:titulo]</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <template-item type="ul" model="items" class="navbar-nav  mr-auto"> </template-item>
+            </div>
+
+        </nav>
+    </template>
+
+    <template-item>
+        <li class="navbar-item active">
+            <a class="nav-link" href="[json:link]">[json:text]</a>
+        </li>
+    </template-item>
+
+</plugdo-navbar>

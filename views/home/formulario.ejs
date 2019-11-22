@@ -1,0 +1,38 @@
+<plugdo-form id="form" class="p-1">
+    <data>
+        {
+        "logo":"Captura de Datos de BD",
+        "rubros":[
+        {
+        "label":"id",
+        "type":"number"
+        }
+        ]
+        }
+    </data>
+
+    <template>
+        <div class="container  " id="">
+            <div class="row text-light bg-dark p-4 border border-4 border-info rounded-lg w-50">
+                <div class="col-md-12">
+                    <h1>[json:logo]</h1>
+                    <template-form type="div"  model="rubros"> </template-form>
+                   
+                        <button class="btn btn-primary btn-block mt-1" type="submit"
+                            onclick="switchf()">Ingresar</button>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template-form>
+        <form>
+            <div class="form-group">
+                <label>[json:label]</label>
+                <input class="form-control" type="[json:type]" placeholder="[json:label]" name="[json:label]"
+                    id="[json:label]">
+            </div>
+        </form>
+    </template-form>
+
+</plugdo-form>
